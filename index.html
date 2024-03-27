@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FakeFruit</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <h1>Fake Fruit</h1>
+  <form id="smoothie-form">
+    <fieldset>
+      <legend>Pick your FakeFlavour:</legend>
+      <label>
+        <input type="radio" name="base" value="Chikoo" required data-price="4.00"> Sapodilla ($4.00)
+      </label>
+      <label>
+        <input type="radio" name="base" value="Mango" required data-price="6.00"> Mango ($6.00)
+      </label>
+      <label>
+        <input type="radio" name="base" value="Strawberry" required data-price="3.00"> Strawberry ($3.00)
+      </label>
+      <label>
+        <input type="radio" name="base" value="Banana" required data-price="2.00"> Banana ($2.00)
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Pick your FakeSize:</legend>
+      <label>
+        <input type="radio" name="size" value="Small" data-price="1.50"> Small ($1.50)
+      </label>
+      <label>
+        <input type="radio" name="size" value="Medium" required data-price="2.00"> Medium ($2.00)
+      </label>
+      <label>
+        <input type="radio" name="size" value="Large" required data-price="1.00"> Large ($3.00)
+      </label>
+      <label>
+        <input type="radio" name="size" value="X-Large" required data-price="1.00"> X-Large ($4.50)
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Pick your FakeLiquid:</legend>
+      <label>
+        <input type="radio" name="liquid" value="Milk" required data-price="0.00"> Milk ($0.00)
+      </label>
+      <label>
+        <input type="radio" name="liquid" value="Almond Milk" data-price="1.00"> Almond Milk ($1.00)
+      </label>
+      <label>
+        <input type="radio" name="liquid" value="Coconut Water" data-price="1.50"> Coconut Water ($1.50)
+      </label>
+      <label>
+        <input type="radio" name="liquid" value="0% Fat" data-price="2.00"> 0% Fat Milk ($2.00)
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Quantity:</legend>
+      <label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1"> Smoothie(s)
+      </label>
+    </fieldset>
+    <button type="submit">Place order!</button>
+  </form>
+  <div id="result"></div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
